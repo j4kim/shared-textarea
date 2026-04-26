@@ -18,7 +18,9 @@
     <script>
       const gun = Gun(["https://gun.jo2.ch/gun"]);
 
-      const content = gun.get("shared-textarea").get("content");
+      const content = gun
+        .get("shared-textarea-" + location.pathname)
+        .get("content");
 
       textarea.oninput = () => content.put(textarea.value);
 
