@@ -1,0 +1,11 @@
+{
+  "name": "jo2",
+  "version": "1.0.0",
+  "description": "shared textarea and cli",
+  "bin": {
+    "jo2": "./cli.js"
+  },
+  "dependencies": {
+    "gun": "^0.2020.1241"
+  }
+}
